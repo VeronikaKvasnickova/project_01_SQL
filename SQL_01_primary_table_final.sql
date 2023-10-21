@@ -1,3 +1,6 @@
+-- DISCORD veronika.kvasnickova ( Veronika K. )
+
+
 -- connects two tables and selects only "NULL" region, which corresponds to the whole country, just to get an idea
 SELECT *
 FROM czechia_price price
