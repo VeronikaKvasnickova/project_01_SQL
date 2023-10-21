@@ -43,7 +43,7 @@ SELECT DISTINCT -- so AS TO SHOW ONLY one average_payroll per industry per YEAR,
 	average_payroll
 FROM t_veronika_kvasnickova_project_SQL_primary_final;
 
--- B
+-- B)
 -- creates a table with two collumns of average payroll
 CREATE OR REPLACE VIEW v_veronika_kvasnickova_payroll_dif AS
 SELECT 
@@ -62,7 +62,7 @@ LEFT JOIN v_veronika_kvasnickova_industry AS ind2
 WHERE ind2.year IS NOT NULL -- so AS NOT TO see YEAR 2021 which has NO CORRESPONDING (2022) YEAR IN the PRIMARY TABLE
 	 AND ind2.average_payroll - ind1.average_payroll  <0; -- shows ONLY negative numbers = decrease IN payroll
 
--- C
+-- C)
 -- creates a final table for TASK 1
 SELECT 
 	industry_code,  
